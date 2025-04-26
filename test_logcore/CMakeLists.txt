@@ -6,8 +6,10 @@ add_executable(test_logcore
 # 链接 logcore 库和 GTest
 target_link_libraries(test_logcore PRIVATE
     logcore        # 链接 logcore 功能库
-    GTest::GTest   # GTest 库
-    GTest::Main    # GTest Main 库
+    gtest        # GTest 库
+    gtest_main  # GTest Main 库
+    gmock_main       # GTest Main 库
+    gmock        # GMock 库
 )
 
 # 启用测试
