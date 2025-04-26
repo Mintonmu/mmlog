@@ -12,4 +12,7 @@ add_library(logcore STATIC
 target_include_directories(logcore PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include  # logcore/include 目录
 )
+target_link_libraries(logcore PUBLIC
+    fmt::fmt
+)
 target_compile_features(logcore PUBLIC cxx_std_17)

@@ -8,13 +8,13 @@
 #define LOG_LEVEL_TRACE 5
 #define LOGLVL LOG_LEVEL_INFO
 #define LOG_LEVEL LOGLVL
-#include <cstdio>
+#include <fmt/base.h>
 #define LOG_INFO(LOGLEVEL, MSG)                                                                                        \
   do                                                                                                                   \
     {                                                                                                                  \
       if (LOGLVL <= LOG_LEVEL_INFO)                                                                                    \
         {                                                                                                              \
-          printf ("INFO: %s\n", MSG);                                                                                  \
+          fmt::print ("INFO: {}\n", MSG);                                                                              \
         }                                                                                                              \
     }                                                                                                                  \
   while (0)
@@ -23,7 +23,7 @@
     {                                                                                                                  \
       if (LOGLVL <= LOG_LEVEL_ERROR)                                                                                   \
         {                                                                                                              \
-          printf ("ERROR: %s\n", MSG);                                                                                 \
+          fmt::print ("ERROR: {}\n", MSG);                                                                             \
         }                                                                                                              \
     }                                                                                                                  \
   while (0)
@@ -32,7 +32,7 @@
     {                                                                                                                  \
       if (LOGLVL <= LOG_LEVEL_DEBUG)                                                                                   \
         {                                                                                                              \
-          printf ("DEBUG: %s\n", MSG);                                                                                 \
+          fmt::print ("DEBUG: {}\n", MSG);                                                                             \
         }                                                                                                              \
     }                                                                                                                  \
   while (0)
@@ -50,7 +50,7 @@
     {                                                                                                                  \
       if (LOGLVL <= LOG_LEVEL_TRACE)                                                                                   \
         {                                                                                                              \
-          printf ("TRACE: %s\n", MSG);                                                                                 \
+          fmt::print ("TRACE: {}\n", MSG);                                                                             \
         }                                                                                                              \
     }                                                                                                                  \
   while (0)
