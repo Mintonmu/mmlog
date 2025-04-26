@@ -6,7 +6,7 @@ This my Log Library
 
 ## Download 
 ```bash
-git clone https://github.com/Mintonmu/mmlog.git
+git clone --recursive https://github.com/Mintonmu/mmlog.git
 ```
 
 ## Build
