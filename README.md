@@ -4,14 +4,13 @@ This my Log Library
 
 # How to Use This Repo
 
-## Download 
+## Download
 ```bash
 git clone --recursive https://github.com/Mintonmu/mmlog.git
 ```
 
 ## Build
 ```bash
-# for mac
 cd mmlog
 cmake -S . -B build -G Ninja
 cd build
